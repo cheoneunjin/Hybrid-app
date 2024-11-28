@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="./down/themes/purple.min.css" />
+	<link rel="stylesheet" href="./down/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="./down/jquery.mobile-1.4.5.min.css"/>
+	<script src="./down/jquery-1.11.1.min.js"></script>
+	<script src="./down/jquery.mobile-1.4.5.min.js"></script>
+	<script src = "./cordova.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-role="page" id="home"> 
+	<div data-role="header" data-theme="c"> 
+		<h2>JENIFFERSOFT 소개</h2> 
+		<a href="#leftpanel" class="ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">leftpanel</a> 
+	</div>
+
+	<div data-role="panel" id="leftpanel" data-position="left" data-display="overlay" data-theme="c" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open"> 
+		<div class="ui-panel-inner"> <a data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext" style="margin-top:-10px; margin-left:-10px;margin-bottom:20px;"></a> 
+			<ul data-role="listview" class="ui-listview"> 
+				<li class="ui-first-child"> <a href="#intro" class="ui-btn ui-btn-icon-right ui-icon-carat-r">회사소개</a> </li> 
+				<li> <a href="#product" class="ui-btn ui-btn-icon-right ui-icon-carat-r">제품</a> </li> 
+				<li> <a href="#blog" data-rel="dialog" class="ui-btn ui-btn-icon-right ui-icon-carat-r">블로그</a> </li> 
+				<li> <a href="#locations" class="ui-btn ui-btn-icon-right ui-icon-carat-r">위치안내</a> </li> 
+			</ul> 
+		</div>
+	</div>
+	<div data-role="content" style="text-align:center"> 
+		<img src="companylogo.PNG"><br>
+		<img src="0-1.PNG" width="300"><br>
+		<img src="0-2.PNG" width="300">
+		<br>
+		<div class="ui-bar ui-bar-a">JENIFFERSOFT 영상</div><br/>
+		<video controls width="380" preload="metadata">
+				<source src="video.mp4" type="video/mp4">
+			</video>
+	</div> 
+
+	<div data-role="footer" data-position="fixed" data-theme="c">
+			<h1>Cheon_Eunjin</h1>
+	</div>	
+</div>
+
+	<div data-role="page" id="intro" data-theme="c">
+		<div data-role="header" data-theme="c">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>회사소개</h1>
+		</div>
+		
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#1-1">COMPANY</a></li>
+					<li><a href="#1-2">PRODUCT</a></li>
+					<li><a href="#1-3">CULTURES</a></li>
+				</ul>
+			</div>
+			<br>
+			<div data-role="main" id="1-1" style="text-align:center">
+				<img src="1-1.PNG" width="480">
+			</div>
+			<Br>
+			<div data-role="footer" data-position="fixed" data-theme="c">
+				<h1>Cheon_Eunjin</h1>
+			</div>					
+	</div>
+	<div data-role="page" id="1-1" style="text-align:center">
+		<div data-role="header" data-theme="c">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>회사소개</h1>
+		</div>
+		
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#1-1">COMPANY</a></li>
+					<li><a href="#1-2">PRODUCT</a></li>
+					<li><a href="#1-3">CULTURES</a></li>
+				</ul>
+			</div>
+			<br>
+		<img src="1-1.PNG" width="400">
+		<br>
+		<div data-role="footer" data-position="fixed" data-theme="c">
+			<h1>Cheon_Eunjin</h1>
+	</div>
+	</div>
+
+	<div data-role="page" id="1-2" style="text-align:center">
+		<div data-role="header" data-theme="c">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>회사소개</h1>
+		</div>
+		
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#1-1">COMPANY</a></li>
+					<li><a href="#1-2">PRODUCT</a></li>
+					<li><a href="#1-3">CULTURES</a></li>
+				</ul>
+			</div>
+			<br>
+		<img src="1-2.PNG" width="380">
+		<div data-role="footer" data-position="fixed" data-theme="c">
+			<h1>Cheon_Eunjin</h1>
+	</div>
+	</div>
+
+	<div data-role="page" id="1-3" style="text-align:center">
+		<div data-role="header" data-theme="c">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>회사소개</h1>
+		</div>
+		
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#1-1">COMPANY</a></li>
+					<li><a href="#1-2">PRODUCT</a></li>
+					<li><a href="#1-3">CULTURES</a></li>
+				</ul>
+			</div>
+			<br>
+		<img src="1-3.PNG" width="380">
+		<div data-role="footer" data-position="fixed" data-theme="c">
+			<h1>Cheon_Eunjin</h1>
+	</div>
+	</div>
+
+	<div data-role="page" id="product" data-theme="c">
+		<div data-role="header" data-theme="c">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>제품</h1>
+		</div>
+		
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#2-1">개요</a></li>
+					<li><a href="#2-2">JAVA</a></li>
+					<li><a href="#2-3">.NET</a></li>
+					<li><a href="#2-4">PHP</a></li>
+				</ul>
+			</div>
+
+			<div data-role="main" id="2-1" style="text-align:center">
+				<h1>실시간 모니터링</h1>
+				<img src="2-1.png" width="380"><br>
+				<b>실시간 액티브 서비스 모니터링</b><br>
+				<p>제니퍼는 액티브 서비스 모니터링을 통해 모든 트랜잭션이 웹 애플리케이션 서버에 들어오는 순간부터 처리되기까지 전 과정을 실시간으로 모니터링합니다. 이 직관적인 그래프는, 트랜잭션 처리 지연이나,사용자 응답지연 및 어느 SQL 쿼리가 현시점에서 수행되고 있는지와 같은 트랜잭션 수행상태에 대한 정보를 실시간으로 보여줍니다.</p>
+				<br>
+				<b>실시간 엑스 뷰</b><br>
+				<p>종료된 트랜잭션은 실시간으로 엑스 뷰를 통해 분석이 가능합니다. 엑스 뷰는 종료된 모든 트랜잭션의 응답 시간을 개별 점 그래프로 표현한 차트입니다. 사용자는 엑스 뷰를 통해 트랜잭션의 응답시간 분포뿐 아니라 다양한 분포 패턴을 감지하여 장애 상황의 원인을 빠르게 분석하고 대응할 수 있습니다.</p>
+				<br>
+				<img src="2-1-1.png" width="380"><br>
+				<b>애플리케이션 변경 감지</b><br>
+				<p>제니퍼는 애플리케이션 변경 감지 기능을 통해, 변경 전후의 성능 변화를 실시간으로 모니터링하고, 변경 시점에 변경된 소스코드를 추적하여 어떤 소스코드가 변경되었는지 추적할 수 있습니다. 이를 통해 개발자와 운영자 모두가 쉽고 빠르게 서비스의 변화를 감지하고 대응할 수 있습니다.</p>
+				<br>
+				<h1>개별 트랜잭션 분석</h1>
+				<img src="2-1-2.jpg" width="380"><br>
+				<b>스마트 프로파일링</b><br>
+				<p>제니퍼의 개별 트랜잭션의 응답시간을 활용한 엑스 뷰 기반의 분석은 이미 수많은 고객사에서 검증된 트랜잭션 모니터링 기법입니다. 하지만, 프로파일링분석은 개발자 혹은 성능 튜닝의 전문가가 아니면 어려움을 겪는 것이 사실이었습니다. 이에 제니퍼는 누구나 쉽게 프로파일링 데이터를 분석 할 수 있는 스마트 프로파일링(Smart Profiling) 기능을 제공합니다. 이 기능을 통해 사용자는 Method, SQL, 외부 서비스 중 응답시간이 느린 구간을 선택하여 해당 시점의 프로파일을 쉽고 빠르게 분석할 수 있습니다.</p>
+				<br>
+				<img src="2-1-3.jpg" width="380"><br>
+				<b>자동 스택트레이스</b><br>
+				<p>제니퍼를 포함한 대부분의 APM은 트랜잭션이 느린 원인을 분석하기 위해 매서드 프로파일링 기능을 제공합니다. 하지만 매서드 프로파일링 기능은 잘못된 설정으로 성능에 영향을 주거나 실제 느린 매서드를 찾지 못할 경우가 많습니다. 또한, 로직을 잘 알아야 하므로 성능 전문가가 아닌 이상 사용이 매우 어려운 단점이 있습니다. 제니퍼는 이런 제약사항을 없애기 위해 자동 스택트레이스 기능을 제공합니다. 이 기능은 성능 전문가가 아니더라도 느린 트랜잭션이 발생했을 때 해당 시점에 자동적으로 스택트레이스(Stacktrace)를 남겨원인을 쉽고 빠르게 분석할 수 있습니다.</p>
+				<br>
+				<h1>분석과 보고서</h1>
+				<img src="2-1-4.png" width="380"><br>
+				<b>초 단위 성능 모니터링 및 사후 분석</b><br>
+				<p>제니퍼는 대시보드와 과거 데이터 모두를 동일하게 초 단위로 분석할 수 있습니다. 실제 모니터링하면서 발생했던 상황의 표본을 샘플링(Sampling)하지 않고 초 단위로 분석할 수 있으므로, 모니터링 시점 그대로를 분석할 수 있습니다. 제니퍼의 원천기술인 제니퍼 레파지토리(JENNIFER Repository)를 통해 최적화된 초 단위 데이터 저장기능이 이를 가능하도록 했습니다.</p>
+				<br>
+				<img src="2-1-5.png" width="380"><br>
+				<b>보고서</b><br>
+				<p>성능 분석 보고서를 만들기 위해서는 전문적인 지식, 툴을 다루기 위한 학습을 해야 하는 등의 어려움이 많습니다. 특히, 기존의 보고서는 SQL을 사용해야 하거나, Drag&Drop의 어려운 UX 때문에 사용하기 어려웠습니다. 제니퍼의 보고서 기능은 텍스트 에디터 방식으로 평소에 사용하는 각종 에디팅 툴(Editing Tool)과 동일한 방식으로 쉽게 보고서를 작성할 수 있습니다. 그리고, 제니퍼를 사용하는 사용자라면 전문 지식 없이도 누구나 쉽게 클릭만으로 설정해서 원하는 보고서 차트를 추가할 수 있습니다.</p>
+			</div>
+			
+			<div data-role="footer" data-position="fixed" data-theme="c">
+				<h1>Cheon_Eunjin</h1>
+			</div>					
+	</div>
+
+	<div data-role="page" id="2-1" style="text-align:center">
+		<div data-role="header" data-theme="c">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>제품</h1>
+		</div>
+		
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#2-1">개요</a></li>
+					<li><a href="#2-2">JAVA</a></li>
+					<li><a href="#2-3">.NET</a></li>
+					<li><a href="#2-4">PHP</a></li>
+				</ul>
+			</div>
+
+		<h1>실시간 모니터링</h1>
+				<img src="2-1.png" width="380"><br>
+				<b>실시간 액티브 서비스 모니터링</b><br>
+				<p>제니퍼는 액티브 서비스 모니터링을 통해 모든 트랜잭션이 웹 애플리케이션 서버에 들어오는 순간부터 처리되기까지 전 과정을 실시간으로 모니터링합니다. 이 직관적인 그래프는, 트랜잭션 처리 지연이나,사용자 응답지연 및 어느 SQL 쿼리가 현시점에서 수행되고 있는지와 같은 트랜잭션 수행상태에 대한 정보를 실시간으로 보여줍니다.</p>
+				<br>
+				<b>실시간 엑스 뷰</b><br>
+				<p>종료된 트랜잭션은 실시간으로 엑스 뷰를 통해 분석이 가능합니다. 엑스 뷰는 종료된 모든 트랜잭션의 응답 시간을 개별 점 그래프로 표현한 차트입니다. 사용자는 엑스 뷰를 통해 트랜잭션의 응답시간 분포뿐 아니라 다양한 분포 패턴을 감지하여 장애 상황의 원인을 빠르게 분석하고 대응할 수 있습니다.</p>
+				<br>
+				<img src="2-1-1.png" width="380"><br>
+				<b>애플리케이션 변경 감지</b><br>
+				<p>제니퍼는 애플리케이션 변경 감지 기능을 통해, 변경 전후의 성능 변화를 실시간으로 모니터링하고, 변경 시점에 변경된 소스코드를 추적하여 어떤 소스코드가 변경되었는지 추적할 수 있습니다. 이를 통해 개발자와 운영자 모두가 쉽고 빠르게 서비스의 변화를 감지하고 대응할 수 있습니다.</p>
+				<br>
+				<h1>개별 트랜잭션 분석</h1>
+				<img src="2-1-2.jpg" width="380"><br>
+				<b>스마트 프로파일링</b><br>
+				<p>제니퍼의 개별 트랜잭션의 응답시간을 활용한 엑스 뷰 기반의 분석은 이미 수많은 고객사에서 검증된 트랜잭션 모니터링 기법입니다. 하지만, 프로파일링분석은 개발자 혹은 성능 튜닝의 전문가가 아니면 어려움을 겪는 것이 사실이었습니다. 이에 제니퍼는 누구나 쉽게 프로파일링 데이터를 분석 할 수 있는 스마트 프로파일링(Smart Profiling) 기능을 제공합니다. 이 기능을 통해 사용자는 Method, SQL, 외부 서비스 중 응답시간이 느린 구간을 선택하여 해당 시점의 프로파일을 쉽고 빠르게 분석할 수 있습니다.</p>
+				<br>
+				<img src="2-1-3.jpg" width="380"><br>
+				<b>자동 스택트레이스</b><br>
+				<p>제니퍼를 포함한 대부분의 APM은 트랜잭션이 느린 원인을 분석하기 위해 매서드 프로파일링 기능을 제공합니다. 하지만 매서드 프로파일링 기능은 잘못된 설정으로 성능에 영향을 주거나 실제 느린 매서드를 찾지 못할 경우가 많습니다. 또한, 로직을 잘 알아야 하므로 성능 전문가가 아닌 이상 사용이 매우 어려운 단점이 있습니다. 제니퍼는 이런 제약사항을 없애기 위해 자동 스택트레이스 기능을 제공합니다. 이 기능은 성능 전문가가 아니더라도 느린 트랜잭션이 발생했을 때 해당 시점에 자동적으로 스택트레이스(Stacktrace)를 남겨원인을 쉽고 빠르게 분석할 수 있습니다.</p>
+				<br>
+				<h1>분석과 보고서</h1>
+				<img src="2-1-4.png" width="380"><br>
+				<b>초 단위 성능 모니터링 및 사후 분석</b><br>
+				<p>제니퍼는 대시보드와 과거 데이터 모두를 동일하게 초 단위로 분석할 수 있습니다. 실제 모니터링하면서 발생했던 상황의 표본을 샘플링(Sampling)하지 않고 초 단위로 분석할 수 있으므로, 모니터링 시점 그대로를 분석할 수 있습니다. 제니퍼의 원천기술인 제니퍼 레파지토리(JENNIFER Repository)를 통해 최적화된 초 단위 데이터 저장기능이 이를 가능하도록 했습니다.</p>
+				<br>
+				<img src="2-1-5.png" width="380"><br>
+				<b>보고서</b><br>
+				<p>성능 분석 보고서를 만들기 위해서는 전문적인 지식, 툴을 다루기 위한 학습을 해야 하는 등의 어려움이 많습니다. 특히, 기존의 보고서는 SQL을 사용해야 하거나, Drag&Drop의 어려운 UX 때문에 사용하기 어려웠습니다. 제니퍼의 보고서 기능은 텍스트 에디터 방식으로 평소에 사용하는 각종 에디팅 툴(Editing Tool)과 동일한 방식으로 쉽게 보고서를 작성할 수 있습니다. 그리고, 제니퍼를 사용하는 사용자라면 전문 지식 없이도 누구나 쉽게 클릭만으로 설정해서 원하는 보고서 차트를 추가할 수 있습니다.</p>
+				
+				<div data-role="footer" data-position="fixed" data-theme="c">
+				<h1>Cheon_Eunjin</h1>
+				</div>
+	</div>
+
+	<div data-role="page" id="2-2" style="text-align:center">
+		<div data-role="header" data-theme="c">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>제품</h1>
+		</div>
+		
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#2-1">개요</a></li>
+					<li><a href="#2-2">JAVA</a></li>
+					<li><a href="#2-3">.NET</a></li>
+					<li><a href="#2-4">PHP</a></li>
+				</ul>
+			</div>
+			<div>
+			<h1>JAVA</h1>
+			<br>
+			<p>제니퍼는 현재 시스템에서 일어나는 모든 상황을 한눈에 모니터링하고, 문제 발생 시 쉽게 원인을 분석할 수 있도록 설계되었습니다. 개발부터, 테스트, 오픈, 운영, 안정화의 전 단계에 걸쳐 성능을 모니터링하고 분석할 수 있으며, 운영 중인 Java 시스템을 최소한의 부하로 실시간 모니터링 할 수 있습니다.</p>
+			<br>
+			<p>Architecture</p>
+				<img src="2-2.PNG" width="400"><br>
+			</div>
+
+				<div data-role="footer" data-position="fixed" data-theme="c">
+				<h1>Cheon_Eunjin</h1>
+				</div>
+
+	</div>
+
+	<div data-role="page" id="2-3" style="text-align:center">
+		<div data-role="header" data-theme="c">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>제품</h1>
+		</div>
+		
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#2-1">개요</a></li>
+					<li><a href="#2-2">JAVA</a></li>
+					<li><a href="#2-3">.NET</a></li>
+					<li><a href="#2-4">PHP</a></li>
+				</ul>
+			</div>
+			<div>
+			<h1>.NET</h1>
+			<br>
+			<p>제니퍼(JENNIFER) for .NET은 마이크로소프트의 닷넷 프레임워크 및 닷넷 코어기반의 응용 프로그램을 운영 중에 최소한의 부하로 실시간 모니터링을 할 수 있습니다. 응용 프로그램의 프로파일 데이터를 다양한 관점에서 분석한 대시보드를 HTML5 뷰로 제공하며, 이를 통해 사용자는 운영 시스템에 동작 중인 응용 프로그램의 즉시적 성능 장애 진단 및 장애 대응이 가능합니다.</p>
+			<br>
+			<p>Architecture</p>
+				<img src="2-3.PNG" width="400">
+			</div>
+
+				<div data-role="footer" data-position="fixed" data-theme="c">
+					<h1>Cheon_Eunjin</h1>
+				</div>
+	</div>	
+
+	<div data-role="page" id="2-4" style="text-align:center">
+		<div data-role="header" data-theme="c">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>사업영역</h1>
+		</div>
+		
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#2-1">개요</a></li>
+					<li><a href="#2-2">JAVA</a></li>
+					<li><a href="#2-3">.NET</a></li>
+					<li><a href="#2-4">PHP</a></li>
+				</ul>
+			</div>
+
+			<div>
+			<h1>PHP</h1>
+			<br>
+			<p>PHP는 현재 가장 많이 사용되는 웹 서버 스크립트 언어입니다. 하지만 서비스 운영 중에 PHP 서비스 환경을 모니터링 하고 장애 진단을 할 수 있는 도구는 찾기 어려웠습니다. 제니퍼 PHP는 운영 중인 PHP 웹 환경의 성능을 직관적으로 모니터링 할 수 있을 뿐 아니라 장애 원인을 분석하고 해결 할 수 있는 프로세스를 제공합니다.</p>
+			<br>
+			<p>Architecture</p>
+				<img src="2-4.PNG" width="400">
+			</div>
+				<div data-role="footer" data-position="fixed" data-theme="c">
+				<h1>Cheon_Eunjin</h1>
+				</div>
+	</div>
+
+	<div data-role="page" id="blog" data-theme="c">
+		<div data-role="header" data-theme="c">
+			<h1>블로그</h1>
+			<div data-role="content">
+			<div class="ui-bar ui-bar-e"></div><br/>
+				<iframe width="100%" height="500" src="https://jennifersoft.com/ko/blog-home/"></iframe></li><br/>
+			<div data-role="footer">
+				<a href="#home"  data-direction="reverse" data-theme="c">이전</a>
+			</div>
+			</div>
+		</div>
+	</div>
+
+		<div data-role="page" id="locations" data-theme="c">
+			<div data-role="header" data-theme="c">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>위치안내</h1>
+			</div>
+		
+			<div class="ui-bar ui-bar-a" >위치안내</div><br/>
+			<li><iframe width="400" height="500" src="https://m.map.kakao.com/actions/detailMapView?id=13530414&refService=place"></iframe></li><br/>
+			<div data-role="footer" data-position="fixed" data-theme="c">
+			<h1>Cheon_Eunjin</h1>
+			</div>
+		</div>
+</body>
+</html>
