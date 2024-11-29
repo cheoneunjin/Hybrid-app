@@ -2,7 +2,7 @@
 
 ### 결과물
 
-project_web.pptx
+project_web.pptx 참고
 
 ### 안드로이드 개발 환경 구축
 - JDK 설치
